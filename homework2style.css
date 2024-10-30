@@ -1,0 +1,75 @@
+/*
+Program name: homework2style.css
+Author: Brandon Pham
+Date created: Sep 23, 2024
+Date last edited: Sep 23, 2024
+Version: 1.0
+Description:
+*/
+
+
+body {
+    background-color: #FFF1E7; 
+    font-family: "Times New Roman", Times, serif;
+    color: #000000;
+    text-align: center;
+ }
+ 
+ p {
+     font-size: 16px;
+     color:#00008B;
+ }
+ 
+ input, textarea, select {
+     padding: 8px;
+     margin-bottom: 10px;
+     border: 1px solid #00008B;
+     font-size: 14px;
+ }
+
+ .popup {
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%; /* Adjust the width as needed */
+    height: 80%; /* Adjust the height as needed */
+    background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center items vertically */
+    padding: 20px; /* Add some padding */
+    overflow: auto; /* Allow scrolling if content overflows */
+}
+
+/* Modal content box */
+.popup-content {
+    background-color: #ffdab9; /* Light peach color */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 100%; /* Make the content take the full width of the popup */
+    max-width: none; /* Remove the max-width constraint */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+    text-align: left;
+    overflow: auto; /* Allow scrolling if content overflows */
+}
+
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}

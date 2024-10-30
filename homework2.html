@@ -1,0 +1,181 @@
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <title>My Web Page Title</title>
+        <link href="homework2style.css" rel="stylesheet">
+        <script src= "Homework2script.js" defer></script> 
+    </head>
+    
+    <body onload="document.getElementById('date').innerHTML = Date()">
+        <img src="./Caduces.jpeg" alt="Caduceus"width="300" height="200">
+        <h1>Happy Hospital</h1>
+        <p>Today’s date and time: <span id="date"></span></p>
+        <form id="registrationForm" action="homework1-thankyou.html" method="GET">
+            <div class="form-group">
+                <label for="fname">First name:</label><br>
+                <input type="text" id="fname" name="fname" maxlength="20" title="Enter your first name (max 20 characters)" pattern="[A-Za-z'-]+"> <br>
+                <label for="mintial">Middle intial:</label><br>
+                <input type="text" id="mintial" name="mintial" maxlength="1" title="Enter your middle intial (max 1 character)" pattern="[A-Za-z'-]+"><br>
+                <label for="lname">Last name:</label><br>
+                <input type="text" id="lname" name="lname" maxlength="20" title="Enter your last name (max 20 characters)" pattern="[A-Za-z'-1-5]+"><br>
+            <div>
+            <div class="form-group">
+                <label for="dob">D.O.B:</label><br>
+                <input type="date" id="dob" name="dob"><br>
+            <div>
+            <div class="form-group">
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label><br>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label><br>
+            <div>
+            <div class="form-group">
+                <label for="ssn">Social Security Number:</label><br>
+                <input type="password" id="ssn" name="ssn" maxlength="11" title="Enter your SSN in the format XXX-XX-XXXX"><br>
+            <div>
+            <div class="form-group">
+                <label for="address">First Address:</label><br>
+                <input type="text" id="address" name="address" maxlength="30" title="Enter your address (max 30 characters)"><br>
+                <label for="address2">Second Address:</label><br>
+                <input type="text" id="address2" name="address2" maxlength="30" title="Enter your address (max 30 characters)"><br>
+                <label for="city">City:</label><br>
+                <input type="text" id="city" name="city" maxlength="30" title="Enter your city (max 30 characters)"><br>
+                <label for="state">Choose your state:</label><br>
+                <select id="state" name="state" required>
+                    <option value="">Select a state</option>
+                    <option value="AL">Alabama</option>
+                    <option value="AK">Alaska</option>
+                    <option value="AZ">Arizona</option>
+                    <option value="AR">Arkansas</option>
+                    <option value="CA">California</option>
+                    <option value="CO">Colorado</option>
+                    <option value="CT">Connecticut</option>
+                    <option value="DE">Delaware</option>
+                    <option value="FL">Florida</option>
+                    <option value="GA">Georgia</option>
+                    <option value="HI">Hawaii</option>
+                    <option value="ID">Idaho</option>
+                    <option value="IL">Illinois</option>
+                    <option value="IN">Indiana</option>
+                    <option value="IA">Iowa</option>
+                    <option value="KS">Kansas</option>
+                    <option value="KY">Kentucky</option>
+                    <option value="LA">Louisiana</option>
+                    <option value="ME">Maine</option>
+                    <option value="MD">Maryland</option>
+                    <option value="MA">Massachusetts</option>
+                    <option value="MI">Michigan</option>
+                    <option value="MN">Minnesota</option>
+                    <option value="MS">Mississippi</option>
+                    <option value="MO">Missouri</option>
+                    <option value="MT">Montana</option>
+                    <option value="NE">Nebraska</option>
+                    <option value="NV">Nevada</option>
+                    <option value="NH">New Hampshire</option>
+                    <option value="NJ">New Jersey</option>
+                    <option value="NM">New Mexico</option>
+                    <option value="NY">New York</option>
+                    <option value="NC">North Carolina</option>
+                    <option value="ND">North Dakota</option>
+                    <option value="OH">Ohio</option>
+                    <option value="OK">Oklahoma</option>
+                    <option value="OR">Oregon</option>
+                    <option value="PA">Pennsylvania</option>
+                    <option value="RI">Rhode Island</option>
+                    <option value="SC">South Carolina</option>
+                    <option value="SD">South Dakota</option>
+                    <option value="TN">Tennessee</option>
+                    <option value="TX">Texas</option>
+                    <option value="UT">Utah</option>
+                    <option value="VT">Vermont</option>
+                    <option value="VA">Virginia</option>
+                    <option value="WA">Washington</option>
+                    <option value="WV">West Virginia</option>
+                    <option value="WI">Wisconsin</option>
+                    <option value="WY">Wyoming</option>
+                    <option value="DC">District of Columbia</option>
+                    <option value="PR">Puerto Rico</option>
+                </select><br>
+                <label for="zip">Zipcode:</label><br>
+                <input type="text" id="zip" name="zip" minlength="5" maxlength="10" title="Enter your zipcode (5-10 characters)"><br>
+            <div>
+            <div class="form-group">
+                <label for="email">Email address:</label><br>
+                <input type="email" id="email" name="email" maxlength="50" title="Enter a valid email address (e.g., user@example.com)" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"><br>  
+                <label for="phone">Phone number:</label><br>
+                <input type="tel" id="phone" name="phone" maxlength="14" title="Enter a valid phone number (e.g., (123) 456-7890)" pattern="\(\d{3}\) \d{3}-\d{4}"><br>
+            <div>
+            <div class="form-group">
+                <p> Please select all that applies:</p>
+
+                <input type="checkbox" id="disease1" name="disease1" value="chickenpox">
+                <label for="disease1"> Chickenpox</label><br>
+                <input type="checkbox" id="disease2" name="disease2" value="measles">
+                <label for="disease2"> Measles</label><br>
+                <input type="checkbox" id="disease3" name="disease3" value="tetanus">
+                <label for="disease3"> Tetanus</label><br>
+                <input type="checkbox" id="disease4" name="disease4" value="covid">
+                <label for="disease4"> Covid-19</label><br>
+                <input type="checkbox" id="disease5" name="disease5" value="smallpox">
+                <label for="disease5"> Small Pox</label><br>
+            <div>
+            <div class="form-group">
+                <label for="symptoms">Describe your current symptoms:</label><br>
+                <textarea id="symptoms" name="symptoms" rows="3" cols="50" required></textarea><br>
+            <div>
+            <div class="form-group">
+                <label for="health">On a scale of 1 to 10, how is your health?</label><br>
+                <span>1 (Not Healthy)</span>
+                <input type="range" id="health" name="health" min="0" max="100" value="50">
+                <span>10 (Healthy)</span><br>
+            <div>
+            <div class="form-group">
+                 <p> Have you been vaccinated:</p> 
+
+                <input type="radio" id="y" name="vaccine" value="y">
+                <label for="y">Yes</label><br>
+                <input type="radio" id="n" name="vaccine" value="n">
+                <label for="n">No</label><br>
+            <div>
+            <div class="form-group">
+                <p> Do you have insurance:</p> 
+
+                <input type="radio" id="y" name="insurance" value="y">
+                <label for="y">Yes</label><br>
+                <input type="radio" id="n" name="insurance" value="n">
+                <label for="n">No</label><br>
+            <div>
+            <div class="form-group">
+                <label for="userID">User ID:</label><br>
+                <input type="text" id="userID" name="userID" maxlength="20" ><br>
+            <div>
+            <div class="form-group">
+                <label for="pwd1">Password:</label><br>
+                <input type="password" id="pwd1" name="pwd1" minlength="7" maxlength="20" ><br>
+                <label for="pwd2">Confirm Password:</label><br>
+                <input type="password" id="pwd2" name="pwd2" minlength="7" maxlength="20"><br>
+            <div class="form-group">
+                <input type="submit" value="Submit">
+                <button type="button" onclick="reviewForm()">Review</button>
+                <input type="reset" value="Reset">
+            </div>
+            
+            
+            <footer>
+            <p> Contact Us at HappyHospital@gmail.com <p>  
+             <p>Happy Hospital, 7777 Cat Road, Houston, TX 77001</p>
+            </footer>
+
+        </form>
+            <div id="reviewPopup" class="popup" style="display: none;">
+            <div class="popup-content">
+                <span class="close" onclick="closePopup()">&times;</span>
+                <h2>PLEASE REVIEW THIS INFORMATION</h2>
+                <pre id="reviewContent"></pre> <!-- This <pre> will hold the review content -->
+            </div>
+                </div>
+        
+    </body>
+
+</html>
